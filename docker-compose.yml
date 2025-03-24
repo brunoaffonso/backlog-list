@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+    db:
+        image: mysql:8.3
+        container_name: tarefas_mysql
+        restart: unless-stopped
+        environment:
+            MYSQL_DATABASE: gerenciador_tarefas
+            MYSQL_ROOT_PASSWORD: backlog_123
+            MYSQL_USER: backlog
+            MYSQL_PASSWORD: user_123
+        ports:
+            - "3306:3306"
+        volumes:
+            - tarefas_mysql_data:/var/lib/mysql
+
+volumes:
+    tarefas_mysql_data:
