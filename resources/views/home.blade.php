@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+@extends('layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Backlog de Tarefas</title>
-</head>
+@section('title', 'Página Inicial')
 
-<body>
-
-    <h1>Backlog de Tarefas</h1>
-
-</body>
-
-</html>
+@section('content')
+    <div class="text-center">
+        <h2 class="text-3xl font-bold mb-4">Bem-vindo ao Backlog de Tarefas</h2>
+        <p class="text-lg text-gray-600">Gerencie suas tarefas e categorias de forma simples e eficiente.</p>
+    </div>
+@endsection
